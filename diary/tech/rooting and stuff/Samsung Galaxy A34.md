@@ -26,7 +26,7 @@ i use magisk to root my device, if you prefer another rooting solution then this
 
 for magisk, you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
 
-## 1. unlock the "bootloader"
+## 1. unlock the "bootloader" - phone
 - remember, RESET is required to unlock bootloader
   (yes samsung requires this to protect your privacy smh)
 - use cable that can connect to your computer
@@ -35,15 +35,20 @@ BUT, always use the OFFICIAL cable if you are that afraid of breaking your phone
 - after cyan colored warning appears, just follow the on-screen instructions
 - you can also search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
 
-## 2. download the "firmware"
+## 2. download the "firmware" - PC
 * firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
 * i use Frija to download, but there are other softwares that can be used to download firmware, the principle should be same (entering model number, CSC, IMEI, etc.)
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/9c528ecd-1b99-43e7-8c00-7d691d4b9d90)
 * after downloading, don't forget to extract the zip file you just downloaded (i extracted it to Desktop)
 
-## 3. download Odin3
+## 3. download Odin3 - PC
 just download it from here https://dl2018.sammobile.com/Odin.zip, i pulled it from magisk tutorial lmao
+
+after downloading, don't forget to extract the zip file you just downloaded (i extracted it to Desktop\Odin3)
 
 also for some computers the required "drivers" might not load automatically, you can download from here https://developer.samsung.com/android-usb-driver (also pulled from magisk tutorial)
 
-## 4. 
+## 4. flashing with Odin3
+- Open Odin3, if warning appears just press "OK"
+![image](https://github.com/Antonomasia3/stuff/assets/89201774/7eee006b-b415-4e2f-ad5b-db98e6d45371)
+- 
