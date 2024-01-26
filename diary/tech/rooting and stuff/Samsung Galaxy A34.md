@@ -35,5 +35,10 @@ for magisk, you can also LOOK at this samsung-specific tutorial on official Magi
 * firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
 * i use Frija to download, but there are other softwares that can be used to download firmware, the principle should be same (entering model number, CSC, IMEI, etc.)
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/9c528ecd-1b99-43e7-8c00-7d691d4b9d90)
+* after downloading, don't forget to extract the zip file you just downloaded (i extracted it to Desktop)
 
+## 3. download Odin3
+just download it from here https://dl2018.sammobile.com/Odin.zip, i pulled it from magisk tutorial lmao
+also for some computers the required "drivers" might not load automatically, you can download from here https://developer.samsung.com/android-usb-driver (also pulled from magisk tutorial)
 
+## 4. 
