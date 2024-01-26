@@ -5,7 +5,7 @@ this is my personal experience on rooting and setting up my own device, Samsung 
 ## BACK UP all your data
    * if you have Samsung account, just back it up through their cloud (recommended)
    * you can optionally back up through your Google account
-   * if you have WHATSAPP, do NOT forget to copy/move everything from Android/data/com.whatsapp, that includes downloaded medias
+   * if you have WHATSAPP, do NOT forget to backup through WA settings, then copy/move everything from Android/data/com.whatsapp, that includes downloaded medias
 
 # Rooting
 ## 1. Unlock the "bootloader"
