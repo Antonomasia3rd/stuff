@@ -17,7 +17,7 @@ it also backs up apps + games installed outside play store, i found it very conv
 
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/160b39c3-8127-4ce7-97d9-3621c2aa6741)
 
-# now to the rooting stuff
+# rooting
 to do so, you need to:
 - know how to enable developer options (hin: just spam tap ~7 times on build number)
 - enable OEM unlock which is located on developer options
@@ -25,41 +25,8 @@ to do so, you need to:
 - choose what rooting solution that you will use
 
 ## Before proceeding
-i use magisk to root my device, if you prefer another rooting solution then this might be of no use here, sorry 🙏
+- rooting will void warranty
+- i use magisk to root my device, if you prefer another rooting solution then this might be of no use here, sorry 🙏
 
 for magisk, you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
 
-## 1. unlock the "bootloader" - phone
-- remember, RESET is required to unlock bootloader
-  (yes samsung requires this to protect your privacy smh)
-- use cable that can connect to your computer
-BUT, always use the OFFICIAL cable if you are that afraid of breaking your phone during flashing (i will explain later)
-- turn off your phone, long press both volume button, and then connect the cable to your phone (KEEP both the volume button pressed)
-- after cyan colored warning appears, select Device unlock mode, then just follow the on-screen instructions
-- you can also search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
-
-## 2. download the "firmware" - PC
-* firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
-* i use Frija to download, but there are other softwares that can be used to download firmware, the principle should be same (entering model number, CSC, IMEI, etc.)
-
-![image](https://github.com/Antonomasia3/stuff/assets/89201774/9c528ecd-1b99-43e7-8c00-7d691d4b9d90)
-* after downloading, don't forget to extract the zip file you just downloaded (i extracted it to Desktop)
-
-![image](https://github.com/Antonomasia3/stuff/assets/89201774/6603983d-7823-42a1-801a-5e169b0dcef4)
-
-## 3. download Odin3 - PC
-just download it from here https://dl2018.sammobile.com/Odin.zip, i pulled it from magisk tutorial lmao
-
-after downloading, don't forget to extract the zip file you just downloaded (i extracted it to Desktop\Odin3)
-
-also for some computers the required "drivers" might not load automatically, you can download from here https://developer.samsung.com/android-usb-driver (also pulled from magisk tutorial)
-
-## 4. flashing with Odin3 - PC
-- Open Odin3, if warning appears just press "OK"
-
-![image](https://github.com/Antonomasia3/stuff/assets/89201774/7eee006b-b415-4e2f-ad5b-db98e6d45371)
-- you will be greeted with a simple-yet-confusing interface, it means now it's time to connect your phone to your computer again
-- on your phone, long press both volume button, and then connect the cable to your phone (KEEP both the volume button pressed)
-- after cyan colored warning appears, select Continue
-- it should be detected on Odin3 as COMX (where X is random number assigned i think)
-- as on Odin3, you see there are 5 buttons, you will NEED only 4 buttons, which is BL, AP, CP and CSC
