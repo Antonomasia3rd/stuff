@@ -29,7 +29,11 @@ for magisk, you can also LOOK at this samsung-specific tutorial on official Magi
 ## 1. unlock the "bootloader"
 - remember, RESET is required to unlock bootloader
   (yes samsung requires this to protect your privacy smh)
-- you can search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
+- use cable that can connect to your computer
+BUT, always use the OFFICIAL cable if you are that afraid of breaking your phone during flashing (i will explain later)
+- turn off your phone, long press both volume button, and then connect the cable to your phone (KEEP both the volume button pressed)
+- after cyan colored warning appears, just follow the on-screen instructions
+- you can also search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
 
 ## 2. download the "firmware"
 * firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
@@ -39,6 +43,7 @@ for magisk, you can also LOOK at this samsung-specific tutorial on official Magi
 
 ## 3. download Odin3
 just download it from here https://dl2018.sammobile.com/Odin.zip, i pulled it from magisk tutorial lmao
+
 also for some computers the required "drivers" might not load automatically, you can download from here https://developer.samsung.com/android-usb-driver (also pulled from magisk tutorial)
 
 ## 4. 
