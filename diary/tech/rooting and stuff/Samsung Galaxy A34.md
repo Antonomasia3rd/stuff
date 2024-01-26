@@ -1,19 +1,36 @@
 # Hello! 🙌
 this is my personal experience on rooting and setting up my own device, Samsung Galaxy A34
 
-# First things first, BACK UP all your data !!
-   * if you have Samsung account, just back it up through their cloud (recommended)
-   * you can optionally back up through your Google account, that all is on Settings > Accounts and backup
-   * if you have WHATSAPP, do NOT forget to backup through WA settings, then copy/move everything from Android/data/com.whatsapp, that includes downloaded medias
+# first things first, BACK UP all your data !!
+* if you have Samsung account, just back it up through their cloud (recommended)
+* you can optionally back up through your Google account, that all is on Settings > Accounts and backup
+* back up internal storage to sd card / another computer / another phone / etc.
 
-## Why Samsung cloud?
+## why Samsung cloud?
 it also backs up apps + games installed outside play store, i found it very convenient
 
-# Rooting
+## my backup suggestions
+* for WhatsApp, do NOT forget to back up through WA settings, then copy/move everything from Android/data/com.whatsapp, that includes downloaded medias
+* for LINE, i guess just back up through google drive thingy etc., my phone number is banned from registration because i repeatedly reset phone lmoai i forgot
+* i back up my internal storage with FX File Explorer, selecting all folders on there, and then make it .zip, i store without compressing just to be safe if in case my data got corrupted there, and then moving it to my laptop
+
+# now to the rooting stuff
+to do so, you need to:
+- know how to enable developer options (hin: just spam tap ~7 times on build number)
+- enable OEM unlock which is located on developer options
+- obviously know your lockscreen password, biometrics will not work
+
 ## 1. Unlock the "bootloader"
-      to do so, you need 
+- remember, RESET is required to unlock bootloader
+  (yes samsung requires this to protect your privacy smh)
+you can search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
+
+## 2. Preparing
+!! i use magisk to root my device, if you prefer another rooting solution then this might be of no use here, sorry 🙏
+!! you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
+
+firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
+i use Frija to download, but there are other softwares that can be used to download firmware, the principle should be same (entering model number, CSC, IMEI, etc.)
+![image](https://github.com/Antonomasia3/stuff/assets/89201774/9c528ecd-1b99-43e7-8c00-7d691d4b9d90)
 
 
-      
-  firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
-  you can use Frija to download 
