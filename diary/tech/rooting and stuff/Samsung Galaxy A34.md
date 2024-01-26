@@ -45,6 +45,8 @@ BUT, always use the OFFICIAL cable if you are that afraid of breaking your phone
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/9c528ecd-1b99-43e7-8c00-7d691d4b9d90)
 * after downloading, don't forget to extract the zip file you just downloaded (i extracted it to Desktop)
 
+![image](https://github.com/Antonomasia3/stuff/assets/89201774/6603983d-7823-42a1-801a-5e169b0dcef4)
+
 ## 3. download Odin3 - PC
 just download it from here https://dl2018.sammobile.com/Odin.zip, i pulled it from magisk tutorial lmao
 
