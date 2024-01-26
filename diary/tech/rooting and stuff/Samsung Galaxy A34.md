@@ -23,14 +23,14 @@ to do so, you need to:
 ## 1. Unlock the "bootloader"
 - remember, RESET is required to unlock bootloader
   (yes samsung requires this to protect your privacy smh)
-you can search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
+- you can search the tutorial on Google, i think there are many videos explaining how, if you still don't understand then make an Issue and i'll (hopefully) make one
 
 ## 2. Preparing
-!! i use magisk to root my device, if you prefer another rooting solution then this might be of no use here, sorry 🙏
-!! you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
+- i use magisk to root my device, if you prefer another rooting solution then this might be of no use here, sorry 🙏
+- you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
 
-firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
-i use Frija to download, but there are other softwares that can be used to download firmware, the principle should be same (entering model number, CSC, IMEI, etc.)
+* firmware is well, the software that is on your phone, which is Android OS (+ other samsung stuff = OneUI)
+* i use Frija to download, but there are other softwares that can be used to download firmware, the principle should be same (entering model number, CSC, IMEI, etc.)
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/9c528ecd-1b99-43e7-8c00-7d691d4b9d90)
 
 
