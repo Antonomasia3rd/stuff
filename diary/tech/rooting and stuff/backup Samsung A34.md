@@ -1,5 +1,5 @@
 # Hello! 🙌
-this is my personal experience on rooting and setting up my own device, Samsung Galaxy A34
+this is my personal experience before rooting my own device, Samsung Galaxy A34
 
 # first things first, BACK UP all your data !!
 * if you have Samsung account, just back it up through their cloud (recommended)
