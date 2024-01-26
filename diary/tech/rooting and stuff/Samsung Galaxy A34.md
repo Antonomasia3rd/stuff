@@ -13,6 +13,9 @@ it also backs up apps + games installed outside play store, i found it very conv
 * for WhatsApp, do NOT forget to back up through WA settings, then copy/move everything from Android/data/com.whatsapp, that includes downloaded medias
 * for LINE, i guess just back up through google drive thingy etc., my phone number is banned from registration because i repeatedly reset phone lmoai i forgot
 * i back up my internal storage with FX File Explorer, selecting all folders on there, and then make it .zip, i store without compressing just to be safe if in case my data got corrupted there, and then moving it to my laptop
+* i love stacked widgets, so i also made a backup of it (+ i back up my debloat list)
+
+![image](https://github.com/Antonomasia3/stuff/assets/89201774/160b39c3-8127-4ce7-97d9-3621c2aa6741)
 
 # now to the rooting stuff
 to do so, you need to:
