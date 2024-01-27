@@ -22,7 +22,7 @@ package:com.google.android.connectivity.resources // tested bootloop on Android 
 
 package:com.google.android.ext.services // tested, bootloop with no interactions
 
-package:com.google.android.modulemetadata
+package:com.google.android.modulemetadata // tested, bootloop
 
 package:com.google.android.packageinstaller
 
