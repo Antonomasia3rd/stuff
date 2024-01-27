@@ -149,7 +149,7 @@ com.android.mtp is basically useless on Samsung devices...
 
 you can open an Issue or Discussion on this repo!
 
-## based on Universal Android Debloater list, what is fully checked?
+## based on Universal Android Debloater list, what is fully checked on the "massive debloat" list?
 
 Recommended and Advanced!
 
