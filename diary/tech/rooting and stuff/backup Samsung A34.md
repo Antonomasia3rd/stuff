@@ -17,7 +17,7 @@ it also backs up apps + games installed outside play store, i found it very conv
 
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/160b39c3-8127-4ce7-97d9-3621c2aa6741)
 
-# rooting
+# if you're planning to root
 to do so, you need to:
 - know how to enable developer options (hin: just spam tap ~7 times on build number)
 - enable OEM unlock which is located on developer options
@@ -30,3 +30,21 @@ to do so, you need to:
 
 for magisk, you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
 
+## resetting from rooted device?
+
+also back up your magisk modules!
+
+here is my example:
+
+* ADB & Fastboot for Android NDK
+* Busybox for Android NDK
+* GMS Doze
+* Hex-Installer-Module
+* KnoxPatch Enhancer
+* Magisk Bootloop Protector
+* None Display Cutout
+* Play Integrity NEXT
+* Remove /proc/stat restriction
+* Small Battery
+* YouTube ReVanced Extended
+* Zygisk - LSPosed
