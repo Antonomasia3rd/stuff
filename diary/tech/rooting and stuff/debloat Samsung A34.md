@@ -1,11 +1,8 @@
-# Debloat
-this is list of system apps that i have enabled
-
 # massive debloat
 
 after rooting i still decided to mess with debloat thingy, so here you go ^^
 
-remember that this breaks apps (obviously since this is massive), see FAQ below if you have any questions
+remember that this breaks apps (obviously since this is massive), see the Debloat list or FAQ below if you have any questions
 
 ## Personal user
 
@@ -109,9 +106,16 @@ with no interactions = no connect / disconnect sound, meaning it was already stu
 
 boot stuck = depends on the condition, you can use ADB to restore it if you "always allow" it previously
 
-## FAQ
+# Debloat
+this is list of system apps that i leave enabled
 
-### how to reboot to recovery without waiting the battery to empty?
+## Personal user
+
+null
+
+# FAQ
+
+## how to reboot to recovery without waiting the battery to empty?
 
 - Connect your phone to your computer (any cable as long as it connects)
 
@@ -129,26 +133,26 @@ boot stuck = depends on the condition, you can use ADB to restore it if you "alw
 
 - Enter recovery mode as usual (hold volume up first + power button)
 
-### recommend me something?
+## recommend me something?
 
 you can open an Issue or Discussion on this repo!
 
-### based on Universal Android Debloater list, what is fully checked?
+## based on Universal Android Debloater list, what is fully checked?
 
 Recommended and Advanced!
 
-### this setup cannot access SIM cards
+## this setup cannot access SIM cards
 
 please restore com.android.providers.telephony
 
-### this setup spams Google Play Services not installed
+## this setup spams Google Play Services not installed
 
 please restore com.google.android.gms and com.google.android.gsf
 
-### this setup cannot access storage (Downloaded apps)
+## this setup cannot access storage (Downloaded apps)
 
 please restore com.google.android.providers.media.module
 
-### this setup cannot access storage (Samsung apps)
+## this setup cannot access storage (Samsung apps)
 
 please restore com.samsung.android.providers.media
