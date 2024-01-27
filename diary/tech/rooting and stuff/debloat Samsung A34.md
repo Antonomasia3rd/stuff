@@ -13,45 +13,85 @@ remember that this breaks apps (obviously since this is massive), see FAQ below 
 
 obviously bootloop (with no interactions) this is android's framework, deleting it for another user will also cause the personal user to soft-reboot every 5 minutes, better not mess with this
 
-package:com.android.location.fused // tested bootloop on Android 6, not sure about Android 14
+### package:com.android.location.fused
 
-package:com.android.providers.settings // uninstalling on work profile will make it NOT start, probably will bootloop with no interactions
+tested bootloop on Android 6, not sure about Android 14
 
-package:com.android.settings // boot stuck - stuck on Logo
+### package:com.android.providers.settings
 
-package:com.android.settings.intelligence // since Android 14 samsung decided to merge Finder with Launcher, uninstalling it will crash launcher
+uninstalling on work profile will make it NOT start, probably will bootloop with no interactions
 
-package:com.android.shell // yeah you will not debloat with this uninstalled
+### package:com.android.settings
 
-package:com.android.systemui // boot stuck - UI not showing
+boot stuck - stuck on Logo
 
-package:com.android.uwb.resources // since i have trauma on deleting .resources on Android 11, this will probably bootloop
+### package:com.android.settings.intelligence
 
-package:com.android.wifi.resources // tested bootloop on Android 12, not sure about Android 14
+since Android 14 samsung decided to merge Finder with Launcher, uninstalling it will crash launcher
 
-package:com.google.android.connectivity.resources // tested bootloop on Android 12, not sure about Android 14
+### package:com.android.shell
 
-package:com.google.android.ext.services // tested, bootloop with no interactions
+yeah you will not debloat with this uninstalled
 
-package:com.google.android.modulemetadata // tested, bootloop
+### package:com.android.systemui
 
-package:com.google.android.packageinstaller // tested, bootloop with no interactions
+boot stuck - UI not showing
 
-package:com.google.android.permissioncontroller // tested, bootloop with no interactions
+### package:com.android.uwb.resources
 
-package:com.google.android.safetycenter.resources // since i have trauma on deleting .resources on Android 12, this will probably bootloop
+since i have trauma on deleting .resources on Android 11, this will probably bootloop
 
-package:com.google.android.sdksandbox // tested, bootloop
+### package:com.android.wifi.resources
 
-package:com.samsung.android.wifi.h2e.resources // since i have trauma on deleting .resources on Android 12, this will probably bootloop
+tested bootloop on Android 12, not sure about Android 14
 
-package:com.samsung.android.wifi.p2paware.resources // since i have trauma on deleting .resources on Android 12, this will probably bootloop
+### package:com.google.android.connectivity.resources
 
-package:com.samsung.android.wifi.resources // since i have trauma on deleting .resources on Android 12, this will probably bootloop
+tested bootloop on Android 12, not sure about Android 14
 
-package:com.samsung.android.wifi.softapwpathree.resources // since i have trauma on deleting .resources on Android 12, this will probably bootloop
+### package:com.google.android.ext.services
 
-package:com.sec.android.app.launcher // boot stuck - Phone is starting...
+tested, bootloop with no interactions
+
+### package:com.google.android.modulemetadata
+
+tested, bootloop
+
+### package:com.google.android.packageinstaller
+
+tested, bootloop with no interactions
+
+### package:com.google.android.permissioncontroller
+
+tested, bootloop with no interactions
+
+### package:com.google.android.safetycenter.resources
+
+since i have trauma on deleting .resources on Android 12, this will probably bootloop
+
+### package:com.google.android.sdksandbox
+
+tested, bootloop
+
+### package:com.samsung.android.wifi.h2e.resources
+
+since i have trauma on deleting .resources on Android 12, this will probably bootloop
+
+### package:com.samsung.android.wifi.p2paware.resources
+
+since i have trauma on deleting .resources on Android 12, this will probably bootloop
+
+### package:com.samsung.android.wifi.resources
+
+since i have trauma on deleting .resources on Android 12, this will probably bootloop
+
+### package:com.samsung.android.wifi.softapwpathree.resources
+
+since i have trauma on deleting .resources on Android 12, this will probably bootloop
+
+### package:com.sec.android.app.launcher
+
+boot stuck - Phone is starting...
 
 ## rant
 
@@ -65,14 +105,26 @@ boot stuck = depends on the condition, you can use ADB to restore it if you "alw
 
 ## FAQ
 
-* recommend me something? you can open an Issue or Discussion on this repo!
+### recommend me something?
 
-* based on Universal Android Debloater list, what is fully checked? Recommended and Advanced!
+you can open an Issue or Discussion on this repo!
 
-* this setup cannot access SIM cards, please restore com.android.providers.telephony
+### based on Universal Android Debloater list, what is fully checked?
 
-* this setup spams Google Play Services not installed, please restore com.google.android.gms and com.google.android.gsf
+Recommended and Advanced!
 
-* this setup cannot access storage (Downloaded apps), please restore com.google.android.providers.media.module
+### this setup cannot access SIM cards
 
-* this setup cannot access storage (Samsung apps), please restore com.samsung.android.providers.media
+please restore com.android.providers.telephony
+
+### this setup spams Google Play Services not installed
+
+please restore com.google.android.gms and com.google.android.gsf
+
+### this setup cannot access storage (Downloaded apps)
+
+please restore com.google.android.providers.media.module
+
+### this setup cannot access storage (Samsung apps)
+
+please restore com.samsung.android.providers.media
