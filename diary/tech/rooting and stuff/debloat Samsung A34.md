@@ -107,7 +107,7 @@ with no interactions = no connect / disconnect sound, meaning it was already stu
 boot stuck = depends on the condition, you can use ADB to restore it if you "always allow" it previously
 
 # Debloat
-this is list of system apps that i leave enabled
+this is list of system apps that i leave enabled (addition of massive debloat)
 
 ## Personal user
 
