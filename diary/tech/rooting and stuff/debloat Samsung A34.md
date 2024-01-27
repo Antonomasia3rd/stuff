@@ -6,6 +6,8 @@ make an Issue and i'll make the "uninstalled" list (if i'm not lazy heheh ><)
 
 after rooting i still decided to mess with debloat thingy, so here you go ^^
 
+this means only the system apps needed to boot into homescreen
+
 remember that this breaks apps (obviously since this is massive), see the Debloat list or FAQ below if you have any questions
 
 ## Personal user
