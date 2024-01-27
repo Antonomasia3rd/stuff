@@ -2,13 +2,13 @@ this is list of packages that i leave installed (not uninstalled)
 
 make an Issue and i'll make the "uninstalled" list (if i'm not lazy heheh ><)
 
-# massive debloat
+# The "Massive" Debloating
+
+by "Massive" i mean the required system app needed to boot into homescreen
 
 after rooting i still decided to mess with debloat thingy, so here you go ^^
 
-this means only the system apps needed to boot into homescreen
-
-remember that this breaks apps (obviously since this is massive), see the Debloat list or FAQ below if you have any questions
+remember that this breaks apps (obviously since this is massive), see the continuation on "Debloat" list or FAQ below if you have any questions
 
 ## Personal user
 
@@ -108,112 +108,127 @@ Mediatek is weird, during boot you can NOT access ADB at all! so if you bootloop
 
 bootloop = zygote restarts several times, if you plug on your computer you can see it connects and disconnects until the battery is empty
 
-with no interactions = no connect / disconnect sound, meaning it was already stuck in starting zygote i guess, will reboot to recovery after several failed attempts
+with no interactions = no connect / disconnect sound, meaning it was already stuck in starting zygote i guess, will auto-restart every 5 minutes and possibly auto-restart to recovery after several failed attempts
 
-boot stuck = depends on the condition, you can use ADB to restore it if you "always allow" it previously
+boot stuck = depends on the condition, you can still use ADB to restore it if you "always allow" it previously
 
 # Debloat
-this is list of system apps that i leave enabled (addition of massive debloat)
+this is list of system apps that i leave enabled (continuation of the "Massive" debloating list)
 
 ## Personal user
 
-package:com.android.bluetooth
-package:com.android.externalstorage
-package:com.android.hotwordenrollment.okgoogle
-package:com.android.inputdevices
-package:com.android.intentresolver
-package:com.android.internal.systemui.navbar.gestural
-package:com.android.internal.systemui.navbar.threebutton
-package:com.android.keychain
-package:com.android.managedprovisioning
-package:com.android.mms.service
-package:com.android.nfc
-package:com.android.phone
-package:com.android.printspooler
-package:com.android.providers.calendar
-package:com.android.providers.downloads
-package:com.android.providers.telephony
-package:com.android.server.telecom
-package:com.android.vending
-package:com.google.android.apps.maps
-package:com.google.android.captiveportallogin
-package:com.google.android.documentsui
-package:com.google.android.gm
-package:com.google.android.gms
-package:com.google.android.gms.location.history
-package:com.google.android.googlequicksearchbox
-package:com.google.android.gsf
-package:com.google.android.networkstack
-package:com.google.android.networkstack.tethering
-package:com.google.android.providers.media.module
-package:com.google.android.syncadapters.calendar
-package:com.google.android.webview
-package:com.google.android.youtube
-package:com.microsoft.skydrive
-package:com.osp.app.signin
-package:com.samsung.accessibility
-package:com.samsung.android.app.aodservice
-package:com.samsung.android.app.contacts
-package:com.samsung.android.app.dressroom
-package:com.samsung.android.app.routines
-package:com.samsung.android.app.smartcapture
-package:com.samsung.android.app.soundpicker
-package:com.samsung.android.app.telephonyui
-package:com.samsung.android.biometrics.app.setting
-package:com.samsung.android.bixby.agent
-package:com.samsung.android.bixby.wakeup
-package:com.samsung.android.da.daagent
-package:com.samsung.android.dialer
-package:com.samsung.android.dynamiclock
-package:com.samsung.android.forest
-package:com.samsung.android.game.gamehome
-package:com.samsung.android.game.gametools
-package:com.samsung.android.game.gos
-package:com.samsung.android.honeyboard
-package:com.samsung.android.incallui
-package:com.samsung.android.kgclient
-package:com.samsung.android.knox.zt.framework
-package:com.samsung.android.lool
-package:com.samsung.android.mdx
-package:com.samsung.android.mdx.quickboard
-package:com.samsung.android.messaging
-package:com.samsung.android.mtp
-package:com.samsung.android.networkstack
-package:com.samsung.android.peripheral.framework
-package:com.samsung.android.photoremasterservice
-package:com.samsung.android.provider.filterprovider
-package:com.samsung.android.providers.contacts
-package:com.samsung.android.providers.media
-package:com.samsung.android.providers.trash
-package:com.samsung.android.scloud
-package:com.samsung.android.secsoundpicker
-package:com.samsung.android.smartface
-package:com.samsung.android.smartmirroring
-package:com.samsung.android.sume.nn.service
-package:com.samsung.android.themecenter
-package:com.samsung.android.themestore
-package:com.samsung.android.vtcamerasettings
-package:com.samsung.app.newtrim
-package:com.samsung.cmfa.AuthTouch
-package:com.samsung.internal.systemui.navbar.gestural_no_hint
-package:com.samsung.internal.systemui.navbar.sec_gestural
-package:com.samsung.internal.systemui.navbar.sec_gestural_no_hint
-package:com.samsung.knox.securefolder
-package:com.sec.android.app.apex
-package:com.sec.android.app.billing
-package:com.sec.android.app.camera
-package:com.sec.android.app.myfiles
-package:com.sec.android.app.quicktool
-package:com.sec.android.app.samsungapps
-package:com.sec.android.app.soundalive
-package:com.sec.android.app.volumemonitorprovider
-package:com.sec.android.daemonapp
-package:com.sec.android.gallery3d
-package:com.sec.android.mimage.photoretouching
-package:com.sec.android.sdhms
-package:com.sec.android.soagent
-package:com.sec.hearingadjust
-package:com.sec.sve
+### package:com.android.bluetooth
+
+hmmm i need this for bluetooth sharing (yes that is still common) and nearby sharing feature...
+
+### package:com.android.externalstorage
+
+i use SD card!
+
+### package:com.android.hotwordenrollment.okgoogle
+
+unironically i use the "Ok Google" thingy (guys pls don't judge me)
+
+### package:com.android.inputdevices
+
+i think it will be used for external keyboards ??? i do tend to use it on scrcpy --otg mode
+
+### package:com.android.intentresolver
+
+this breaks sharing feature
+
+### package:com.android.internal.systemui.navbar.gestural
+### package:com.android.internal.systemui.navbar.threebutton
+### package:com.android.keychain
+### package:com.android.managedprovisioning
+### package:com.android.mms.service
+### package:com.android.nfc
+### package:com.android.phone
+### package:com.android.printspooler
+### package:com.android.providers.calendar
+### package:com.android.providers.downloads
+### package:com.android.providers.telephony
+### package:com.android.server.telecom
+### package:com.android.vending
+### package:com.google.android.apps.maps
+### package:com.google.android.captiveportallogin
+### package:com.google.android.documentsui
+### package:com.google.android.gm
+### package:com.google.android.gms
+### package:com.google.android.gms.location.history
+### package:com.google.android.googlequicksearchbox
+### package:com.google.android.gsf
+### package:com.google.android.networkstack
+### package:com.google.android.networkstack.tethering
+### package:com.google.android.providers.media.module
+### package:com.google.android.syncadapters.calendar
+### package:com.google.android.webview
+### package:com.google.android.youtube
+### package:com.microsoft.skydrive
+### package:com.osp.app.signin
+### package:com.samsung.accessibility
+### package:com.samsung.android.app.aodservice
+### package:com.samsung.android.app.contacts
+### package:com.samsung.android.app.dressroom
+### package:com.samsung.android.app.routines
+### package:com.samsung.android.app.smartcapture
+### package:com.samsung.android.app.soundpicker
+### package:com.samsung.android.app.telephonyui
+### package:com.samsung.android.biometrics.app.setting
+### package:com.samsung.android.bixby.agent
+### package:com.samsung.android.bixby.wakeup
+### package:com.samsung.android.da.daagent
+### package:com.samsung.android.dialer
+### package:com.samsung.android.dynamiclock
+### package:com.samsung.android.forest
+### package:com.samsung.android.game.gamehome
+### package:com.samsung.android.game.gametools
+### package:com.samsung.android.game.gos
+### package:com.samsung.android.honeyboard
+### package:com.samsung.android.incallui
+### package:com.samsung.android.kgclient
+### package:com.samsung.android.knox.zt.framework
+### package:com.samsung.android.lool
+### package:com.samsung.android.mdx
+### package:com.samsung.android.mdx.quickboard
+### package:com.samsung.android.messaging
+### package:com.samsung.android.mtp
+### package:com.samsung.android.networkstack
+### package:com.samsung.android.peripheral.framework
+### package:com.samsung.android.photoremasterservice
+### package:com.samsung.android.provider.filterprovider
+### package:com.samsung.android.providers.contacts
+### package:com.samsung.android.providers.media
+### package:com.samsung.android.providers.trash
+### package:com.samsung.android.scloud
+### package:com.samsung.android.secsoundpicker
+### package:com.samsung.android.smartface
+### package:com.samsung.android.smartmirroring
+### package:com.samsung.android.sume.nn.service
+### package:com.samsung.android.themecenter
+### package:com.samsung.android.themestore
+### package:com.samsung.android.vtcamerasettings
+### package:com.samsung.app.newtrim
+### package:com.samsung.cmfa.AuthTouch
+### package:com.samsung.internal.systemui.navbar.gestural_no_hint
+### package:com.samsung.internal.systemui.navbar.sec_gestural
+### package:com.samsung.internal.systemui.navbar.sec_gestural_no_hint
+### package:com.samsung.knox.securefolder
+### package:com.sec.android.app.apex
+### package:com.sec.android.app.billing
+### package:com.sec.android.app.camera
+### package:com.sec.android.app.myfiles
+### package:com.sec.android.app.quicktool
+### package:com.sec.android.app.samsungapps
+### package:com.sec.android.app.soundalive
+### package:com.sec.android.app.volumemonitorprovider
+### package:com.sec.android.daemonapp
+### package:com.sec.android.gallery3d
+### package:com.sec.android.mimage.photoretouching
+### package:com.sec.android.sdhms
+### package:com.sec.android.soagent
+### package:com.sec.hearingadjust
+### package:com.sec.sve
 
 ## rant
 
