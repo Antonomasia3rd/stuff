@@ -1,14 +1,25 @@
-# title
+# Debloat
+this is list of system apps that i have enabled
 
-package:android
+# massive debloat
+
+after rooting i still decided to mess with debloat thingy, so here you go ^^
+
+remember that this breaks apps (obviously since this is massive), see FAQ below if you have any questions
+
+## Personal user
+
+### package:android
+
+obviously bootloop (with no interactions) this is android's framework, deleting it for another user will also cause the personal user to soft-reboot every 5 minutes, better not mess with this
 
 package:com.android.location.fused // tested bootloop on Android 6, not sure about Android 14
 
-package:com.android.providers.settings // tested bootloop on work profile so it WILL be sure bootloop on personal user
+package:com.android.providers.settings // uninstalling on work profile will make it NOT start, probably will bootloop with no interactions
 
 package:com.android.settings // boot stuck - stuck on Logo
 
-package:com.android.settings.intelligence // needed for Launcher
+package:com.android.settings.intelligence // since Android 14 samsung decided to merge Finder with Launcher, uninstalling it will crash launcher
 
 package:com.android.shell // yeah you will not debloat with this uninstalled
 
@@ -52,9 +63,15 @@ with no interactions = no connect / disconnect sound, meaning it was already stu
 
 boot stuck = depends on the condition, you can use ADB to restore it if you "always allow" it previously
 
-# FAQ
+## FAQ
+
+* recommend me something? you can open an Issue or Discussion on this repo!
+
+* based on Universal Android Debloater list, what is fully checked? Recommended and Advanced!
 
 * this setup cannot access SIM cards, please restore com.android.providers.telephony
+
+* this setup spams Google Play Services not installed, please restore com.google.android.gms and com.google.android.gsf
 
 * this setup cannot access storage (Downloaded apps), please restore com.google.android.providers.media.module
 
