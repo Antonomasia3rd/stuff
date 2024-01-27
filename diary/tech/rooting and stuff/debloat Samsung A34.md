@@ -1,4 +1,5 @@
 this is list of packages that i leave installed (not uninstalled)
+
 make an Issue and i'll make the "uninstalled" list (if i'm not lazy heheh ><)
 
 # massive debloat
