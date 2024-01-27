@@ -28,7 +28,7 @@ for magisk, you can also look at this samsung-specific tutorial on official Magi
 
 ## resetting from rooted device?
 
-also back up your magisk modules!
+### also back up your magisk modules!
 
 here is my example:
 
@@ -44,3 +44,7 @@ here is my example:
 * Small Battery
 * YouTube ReVanced Extended
 * Zygisk - LSPosed
+
+### also back up your lsposed modules!
+
+this is where samsung cloud kicks in, i don't need to memorize this
