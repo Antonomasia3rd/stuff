@@ -11,7 +11,9 @@ remember that this breaks apps (obviously since this is massive), see FAQ below 
 
 ### package:android
 
-obviously bootloop (with no interactions) this is android's framework, deleting it for another user will also cause the personal user to soft-reboot every 5 minutes, better not mess with this
+obviously bootloop (with no interactions)
+
+this is android's framework, deleting it for another user will also cause the personal user to soft-reboot every 5 minutes, better not mess with this
 
 ### package:com.android.location.fused
 
