@@ -113,6 +113,14 @@ this is list of system apps that i leave enabled
 
 null
 
+## rant
+
+I'm NOT deleting com.samsung.android.mtp, deleting it will cause me not able to access files from computer, EVEN IF i reinstall it back
+
+I mean- why is it so different than com.android.mtp, where that functionality is restored once i reinstall it?
+
+com.android.mtp is basically useless on Samsung devices...
+
 # FAQ
 
 ## how to reboot to recovery without waiting the battery to empty?
