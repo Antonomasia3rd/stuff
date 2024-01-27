@@ -24,7 +24,7 @@ package:com.google.android.ext.services // tested, bootloop with no interactions
 
 package:com.google.android.modulemetadata // tested, bootloop
 
-package:com.google.android.packageinstaller
+package:com.google.android.packageinstaller // tested, bootloop with no interactions
 
 package:com.google.android.permissioncontroller // tested, bootloop with no interactions
 
