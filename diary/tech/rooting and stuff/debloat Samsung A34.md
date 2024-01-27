@@ -19,6 +19,10 @@ this is android's framework, deleting it for another user will also cause the pe
 
 tested bootloop on Android 6, not sure about Android 14
 
+based on google search, Samsung Galaxy A12 (which is Android 10 i think) will also bootloop with it uninstalled https://xdaforums.com/t/bootloop-after-removing-com-android-location-fused-solved.4444185/
+
+also this list shows that Fused Location is on "Do not uninstall" list, but doesn't tell the exact reason https://gist.github.com/Zymlex/f0b58104dd2f9504a14ffd9bdc3799ac
+
 ### package:com.android.providers.settings
 
 uninstalling on work profile will make it NOT start, probably will bootloop with no interactions
@@ -33,7 +37,7 @@ since Android 14 samsung decided to merge Finder with Launcher, uninstalling it 
 
 ### package:com.android.shell
 
-yeah you will not debloat with this uninstalled
+yeah you will not debloat with this uninstalled, tested on Android 6, disconnects you from ADB with no way of reinstalling
 
 ### package:com.android.systemui
 
@@ -101,11 +105,29 @@ Mediatek is weird, during boot you can NOT access ADB at all! so if you bootloop
 
 bootloop = zygote restarts several times, if you plug on your computer you can see it connects and disconnects until the battery is empty
 
-with no interactions = no connect / disconnect sound, meaning it was already stuck in starting zygote i guess
+with no interactions = no connect / disconnect sound, meaning it was already stuck in starting zygote i guess, will reboot to recovery after several failed attempts
 
 boot stuck = depends on the condition, you can use ADB to restore it if you "always allow" it previously
 
 ## FAQ
+
+### how to reboot to recovery without waiting the battery to empty?
+
+- Connect your phone to your computer (any cable as long as it connects)
+
+- Hold volume down + Power button until the screen is off
+
+- QUICKLY move your finger and press the volume down + volume up button until you see the Download mode
+
+- Press volume up to continue
+
+- Hold volume down FIRST + Power button until the screen is off
+
+- QUICKLY release your finger, not releasing it quickly will result in restarting rather than powering off
+
+- If you see the charging screen, congrats you just need to unplug it from your computer
+
+- Enter recovery mode as usual (hold volume up first + power button)
 
 ### recommend me something?
 
