@@ -226,9 +226,9 @@ this breaks sharing feature
 ### package:com.sec.android.gallery3d
 ### package:com.sec.android.mimage.photoretouching
 ### package:com.sec.android.sdhms
-### package:com.sec.android.soagent
 ### package:com.sec.hearingadjust
 ### package:com.sec.sve
+### package:com.wssyncmldm
 
 ## rant
 
