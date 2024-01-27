@@ -6,7 +6,7 @@ package:com.android.location.fused // tested bootloop on Android 6, not sure abo
 
 package:com.android.providers.settings // tested bootloop on work profile so it WILL be sure bootloop on personal user
 
-package:com.android.settings // boot stuck - stuck on Logo, you can still use ADB to restore if you check the always trust thingy
+package:com.android.settings // boot stuck - stuck on Logo
 
 package:com.android.settings.intelligence // needed for Launcher
 
@@ -48,11 +48,14 @@ Mediatek is weird, during boot you can NOT access ADB at all! so if you bootloop
 
 bootloop = zygote restarts several times, if you plug on your computer you can see it connects and disconnects until the battery is empty
 
-boot stuck = depends on the condition
+with no interactions = no connect / disconnect sound, meaning it was already stuck in starting zygote i guess
+
+boot stuck = depends on the condition, you can use ADB to restore it if you "always allow" it previously
 
 # FAQ
 
 * this setup cannot access SIM cards, please restore com.android.providers.telephony
 
 * this setup cannot access storage (Downloaded apps), please restore com.google.android.providers.media.module
+
 * this setup cannot access storage (Samsung apps), please restore com.samsung.android.providers.media
