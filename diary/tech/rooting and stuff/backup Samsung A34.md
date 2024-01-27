@@ -1,7 +1,7 @@
 # Hello! 🙌
-this is my personal experience before rooting my own device, Samsung Galaxy A34
+this is my personal experience on backing up before rooting my own device, Samsung Galaxy A34
 
-# first things first, BACK UP all your data !!
+# backing up data
 * if you have Samsung account, just back it up through their cloud (recommended)
 * you can optionally back up through your Google account, that all is on Settings > Accounts and backup
 * back up internal storage to sd card / another computer / another phone / etc.
@@ -18,17 +18,13 @@ it also backs up apps + games installed outside play store, i found it very conv
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/160b39c3-8127-4ce7-97d9-3621c2aa6741)
 
 # if you're planning to root
-to do so, you need to:
-- know how to enable developer options (hin: just spam tap ~7 times on build number)
-- enable OEM unlock which is located on developer options
-- obviously know your lockscreen password, biometrics will not work
-- choose what rooting solution that you will use
+i wrote this because i initially wanted to write a tutorial on "how to root samsung galaxy a34", but i guess magisk's official tutorial should already be enough for everyone to understand-
 
-## Before proceeding
+## the warning
 - rooting will void warranty
 - i use magisk to root my device, if you prefer another rooting solution then this might be of no use here, sorry 🙏
 
-for magisk, you can also LOOK at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
+for magisk, you can also look at this samsung-specific tutorial on official Magisk https://topjohnwu.github.io/Magisk/install.html#samsung-devices
 
 ## resetting from rooted device?
 
