@@ -16,6 +16,6 @@ it's source code archive from the "basic programming" course 👀
 
 (aka. programs that i made during the 1st semester of college)
 
-# TL;DR
+# do not read this
 
 not using :3 because i thought it's cringe on public but i rly want to (⁠╥⁠﹏⁠╥⁠)
