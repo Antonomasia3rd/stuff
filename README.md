@@ -18,4 +18,4 @@ it's source code archive from the "basic programming" course 👀
 
 # TL;DR
 
-not using :3 because i though it's cringe on public but i rly want to (⁠╥⁠﹏⁠╥⁠)
+not using :3 because i thought it's cringe on public but i rly want to (⁠╥⁠﹏⁠╥⁠)
