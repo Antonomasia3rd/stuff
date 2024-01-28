@@ -1,4 +1,3 @@
-# Hello! 🙌
 this is my personal experience on backing up before resetting my own device, Samsung Galaxy A34
 
 # backing up data
