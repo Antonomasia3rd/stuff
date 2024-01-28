@@ -227,6 +227,11 @@ I mean- why is it so different than com.android.mtp, where that functionality is
 
 com.android.mtp is basically useless on Samsung devices...
 
+EDIT: now i know why samsung uses that, it's for dual messenger integrations! iirc the default mtp can't do that
+
+![image](https://github.com/Antonomasia3/stuff/assets/89201774/df3642eb-d1f3-4079-95ad-0824e7329cf3)
+
+
 # FAQ
 
 ## how to reboot to recovery without waiting the battery to empty?
