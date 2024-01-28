@@ -2,7 +2,7 @@
 
 this is my personal stuff, that i want to share on github~
 
-(i don't have any blogs alr (⁠╥⁠﹏⁠╥⁠))
+(i don't have any blogs alr (⁠๑⁠•⁠﹏⁠•⁠))
 
 ## take a look on "tech diary"
 
