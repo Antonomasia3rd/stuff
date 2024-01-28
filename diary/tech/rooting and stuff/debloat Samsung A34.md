@@ -213,6 +213,7 @@ this is list of system apps that i leave enabled (continuation of the "Massive" 
 ### package:com.sec.android.daemonapp
 ### package:com.sec.android.gallery3d
 ### package:com.sec.android.mimage.photoretouching
+### package:com.sec.android.provider.badge
 ### package:com.sec.android.sdhms
 ### package:com.sec.hearingadjust
 ### package:com.sec.sve
