@@ -117,26 +117,13 @@ this is list of system apps that i leave enabled (continuation of the "Massive" 
 
 ## Personal user
 
+### package:android.auto_generated_rro_product__
 ### package:com.android.bluetooth
-
-hmmm i need this for bluetooth sharing (yes that is still common) and nearby sharing feature...
-
+### package:com.android.credentialmanager
 ### package:com.android.externalstorage
-
-i use SD card!
-
 ### package:com.android.hotwordenrollment.okgoogle
-
-unironically i use the "Ok Google" thingy (guys pls don't judge me)
-
 ### package:com.android.inputdevices
-
-i think it will be used for external keyboards ??? i do tend to use it on scrcpy --otg mode
-
 ### package:com.android.intentresolver
-
-this breaks sharing feature
-
 ### package:com.android.internal.systemui.navbar.gestural
 ### package:com.android.internal.systemui.navbar.threebutton
 ### package:com.android.keychain
@@ -160,6 +147,7 @@ this breaks sharing feature
 ### package:com.google.android.gsf
 ### package:com.google.android.networkstack
 ### package:com.google.android.networkstack.tethering
+### package:com.google.android.overlay.gmsconfig.geotz
 ### package:com.google.android.providers.media.module
 ### package:com.google.android.syncadapters.calendar
 ### package:com.google.android.webview
