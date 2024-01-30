@@ -35,7 +35,7 @@ since it's "encrypted", i'm afraid i'll forgot that it's still decrypted XML for
 5. exit from adb shell (just type exit)
 6. pull it to your PC's storage (i use desktop)
 
-   e.g. `adb pull /sdcard/device_policies.xml D:\Desktop`
+   e.g. `adb pull /sdcard/device_policies.xml D:\Desktop\`
 7. now open the `.xml` with your preferred text editor
 
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/47bdbcd7-7770-430a-a771-3f9345b015e7)
@@ -49,6 +49,21 @@ make sure the image looks like the same on the RIGHT side, if you got the left o
    (obviously LOOK at the right side)
 
    and then Save...
+
+9. do the opposite (which is moving it back to your phone)
+   `adb push D:\Desktop\device_policies.xml /sdcard/`
+   `adb shell su`
+   `xml2abx -i /sdcard/device_policies.xml`
+   `cp /sdcard/device_policies.xml /data/system/`
+
+## overwrite confirmation? just press `y` and then Enter
+
+10. do NOT forget to change the owner and group to `system` since based on my observation it's still on `root` (playing safe, avoiding bootloops)
+
+    for your information, the original permission is (o) system (g) system with octal 0600, aka.:
+    * owner: system (read allowed, write allowed, execute denied)
+    * group: system (ALL denied)
+    * global (ALL denied)
 
 ## if you prefer doing everything on phone
 lmao video is too big, uploading later!
