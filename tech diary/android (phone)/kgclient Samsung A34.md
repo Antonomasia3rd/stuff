@@ -12,7 +12,7 @@ and also i have ALT way, which is changing the "`device_policies.xml`" in `/data
 
 (altho KP is recommended since it's easy, this method is STILL root only)
 
-## If you don't mind using PC and ADB
+## if you don't mind using PC and ADB
 
 1. enable dev options and usb debugging (you already know this since you're debloating anyways)
 2. execute on the command prompt: `adb shell su`
@@ -34,6 +34,9 @@ since it's "encrypted", i'm afraid i'll forgot that it's still decrypted XML for
 
    e.g. `adb pull /sdcard/device_policies.xml D:\Desktop`
 7. now open the `.xml` with your preferred text editor
+
+## if you prefer doing everything on phone
+
 
 # some proof
 
