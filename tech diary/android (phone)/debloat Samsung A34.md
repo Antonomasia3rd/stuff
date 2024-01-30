@@ -176,9 +176,7 @@ this is list of system apps that i leave enabled (continuation of the "Massive" 
 ### package:com.samsung.android.incallui
 ### package:com.samsung.android.kgclient
 
-NOTE: this package CAN BE safely REMOVED, if you install and set another "Device Owner" / beforehand (there are many examples for this, such as Test DPC, Dhizuku, Island, or Insular), note that setting it up as "Profile Owner" will NOT solve this
-
-i'll probably make a tutorial on how to remove kgclient if i reset this phone again-
+tutorial is on separate document!
 
 ### package:com.samsung.android.knox.zt.framework
 ### package:com.samsung.android.lool
