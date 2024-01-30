@@ -7,14 +7,23 @@ you know that once removing kgclient you're locked by System UI with this messag
 you know that you can replace the so-called "Device Owner" with 3rd party apps, such as Test DPC, Island / Insular, Dhizuku, etc. But unfortunately that does NOT work on unlocked bootloader
 * WHY "Device Owner"? `kgclient` uses that to trigger the warning and preventing uninstallation
 
-if you're ROOTED, you can bypass that with KnoxPatch, and then execute your dpm set-device-owner as usual
+if you're ROOTED, you can bypass the bootloader detection with KnoxPatch, and then execute your dpm set-device-owner as usual
 * by "as usual" i mean- you also have to follow the Android's original rules, which is removing all accounts and users (incl. secure folder and dual messenger) before attempting that, etc.
 
-also some are asking if "Profile Owner" can be used, it can NOT, since kgclient will still exists on the file configuration (aka `device_policies.xml`)
+also some are asking if `set-profile-owner` can be used
+* it can NOT
+* since kgclient will still exists on the file configuration (aka `device_policies.xml`)
+* just try it with `pm suspend`, it will always return `false` (aka. will triggered when uninstalled)
 
 and also i have ALT way, which is changing the "`device_policies.xml`" in `/data/system/`, which works without installing KnoxPatch
 
-(altho KP is recommended since it's easy, this method is STILL root only)
+the benefit is that you don't have to do much hassle by removing ALL accounts and users,
+
+but the side effect is it's not for everyone, it's not easy...
+
+you need to install 3 more apps on this method, VS the "Device Owner" replacement, which only requires 2 apps (e.g. Island + KnoxPatch)
+
+i'll be explaining this ALT method
 
 ## if you don't mind using PC and ADB
 
