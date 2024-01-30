@@ -13,7 +13,7 @@ if you're ROOTED, you can bypass the bootloader detection with KnoxPatch, and th
 also some are asking if `set-profile-owner` can be used
 * it can NOT
 * since kgclient will still exists on the file configuration (aka `device_policies.xml`)
-* just try it with `pm suspend`, it will always return `false` (aka. will triggered when uninstalled)
+* just try it with `pm suspend`, it will always return `false` (aka. will still trigger when uninstalled)
 
 and also i have ALT way, which is changing the "`device_policies.xml`" in `/data/system/`, which works without installing KnoxPatch
 
