@@ -8,6 +8,8 @@ you know that you can replace the so-called "Device Owner" with 3rd party apps, 
 
 if you're ROOTED, you can bypass that with KnoxPatch, and then execute your dpm set-device-owner as usual
 
+by "as usual" i mean- you also have to follow the Android's original rules, which is removing all accounts and users (incl. secure folder and dual messenger) before attempting that, etc.
+
 also some are asking if "Profile Owner" can be used, it can NOT, since kgclient will still exists on the file configuration (aka `.xml`, we'll talk about this later)
 
 and also i have ALT way, which is changing the "`device_policies.xml`" in `/data/system/`, which works without installing KnoxPatch
