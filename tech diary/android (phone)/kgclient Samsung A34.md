@@ -132,6 +132,27 @@ same reason as the pc tutorial above...
     * confirm the confirmation
 20. done, reboot device before uninstalling with ADB
 
+## still images that i'll sort later
+![VideoCapture_20240130-213334](https://github.com/Antonomasia3/stuff/assets/89201774/ed3019ef-f212-4af0-a7fa-99c97b310583)
+![VideoCapture_20240130-213350](https://github.com/Antonomasia3/stuff/assets/89201774/eeb6eacb-5155-4d1f-8dcc-16c1d44c3136)
+![VideoCapture_20240130-213355](https://github.com/Antonomasia3/stuff/assets/89201774/6d4628e7-f85b-4df5-8027-bc63e9c72faf)
+![VideoCapture_20240130-213430](https://github.com/Antonomasia3/stuff/assets/89201774/e5840ac9-f4f8-44a8-b937-03313f0b03b2)
+![VideoCapture_20240130-213445](https://github.com/Antonomasia3/stuff/assets/89201774/d0f3adf7-434c-4721-8038-b5e53375c86e)
+![VideoCapture_20240130-213450](https://github.com/Antonomasia3/stuff/assets/89201774/b3c04fde-5d52-45a7-a104-812ef574efd7)
+![VideoCapture_20240130-213514](https://github.com/Antonomasia3/stuff/assets/89201774/7f631911-d89f-4b92-bd0e-e17a6fdb7458)
+![VideoCapture_20240130-213640](https://github.com/Antonomasia3/stuff/assets/89201774/da08ddf0-77d4-4b29-a8c6-e499ff74eab9)
+![VideoCapture_20240130-213657](https://github.com/Antonomasia3/stuff/assets/89201774/2f595251-4c6c-469f-a2b2-7b1844703e14)
+![VideoCapture_20240130-213802](https://github.com/Antonomasia3/stuff/assets/89201774/a2b9eee7-6b85-4124-a655-cdfd82616597)
+![VideoCapture_20240130-213836](https://github.com/Antonomasia3/stuff/assets/89201774/581de0c8-a7ed-4e74-ac91-747699f8c4e3)
+![VideoCapture_20240130-213923](https://github.com/Antonomasia3/stuff/assets/89201774/12b3f161-9b5b-440c-81b4-ab8eb9b7d158)
+![VideoCapture_20240130-213932](https://github.com/Antonomasia3/stuff/assets/89201774/9687b784-245a-4219-aecf-cb705d7aa077)
+![VideoCapture_20240130-214041](https://github.com/Antonomasia3/stuff/assets/89201774/e326e309-22f2-4c7e-8a2a-abc33ad18f4f)
+![VideoCapture_20240130-214101](https://github.com/Antonomasia3/stuff/assets/89201774/5e9b7249-9abe-41d7-8ed9-83b22dbc14c8)
+![VideoCapture_20240130-214108](https://github.com/Antonomasia3/stuff/assets/89201774/94a7314a-29fd-40a8-a687-ff9e96aec9d3)
+![VideoCapture_20240130-214123](https://github.com/Antonomasia3/stuff/assets/89201774/3412949f-5492-41ba-837e-8569baace56c)
+![VideoCapture_20240130-214132](https://github.com/Antonomasia3/stuff/assets/89201774/ffe5fe02-295f-463e-b7ce-49d83163181b)
+
+
 # some proof
 
 ![image](https://github.com/Antonomasia3/stuff/assets/89201774/9708415c-7626-4729-9323-009533dd4f66)
