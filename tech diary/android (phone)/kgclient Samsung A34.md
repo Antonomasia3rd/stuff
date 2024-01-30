@@ -7,8 +7,7 @@ you know that once removing kgclient you're locked by System UI with this messag
 you know that you can replace the so-called "Device Owner" with 3rd party apps, such as Test DPC, Island / Insular, Dhizuku, etc. But unfortunately that does NOT work on unlocked bootloader
 
 if you're ROOTED, you can bypass that with KnoxPatch, and then execute your dpm set-device-owner as usual
-
-by "as usual" i mean- you also have to follow the Android's original rules, which is removing all accounts and users (incl. secure folder and dual messenger) before attempting that, etc.
+* by "as usual" i mean- you also have to follow the Android's original rules, which is removing all accounts and users (incl. secure folder and dual messenger) before attempting that, etc.
 
 also some are asking if "Profile Owner" can be used, it can NOT, since kgclient will still exists on the file configuration (aka `.xml`, we'll talk about this later)
 
