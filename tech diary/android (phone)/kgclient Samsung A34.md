@@ -64,6 +64,8 @@ make sure the image looks like the same on the RIGHT side, if you got the left o
     * owner: system (read allowed, write allowed, execute denied)
     * group: system (ALL denied)
     * global (ALL denied)
+   
+    everyone who is tech savvy please make an Issue because i change this with FX File Explorer, not sure about doing that on ADB shell
 
 ## if you prefer doing everything on phone
 lmao video is too big, uploading later!
