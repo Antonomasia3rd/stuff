@@ -35,8 +35,20 @@ since it's "encrypted", i'm afraid i'll forgot that it's still decrypted XML for
    e.g. `adb pull /sdcard/device_policies.xml D:\Desktop`
 7. now open the `.xml` with your preferred text editor
 
-## if you prefer doing everything on phone
+![image](https://github.com/Antonomasia3/stuff/assets/89201774/47bdbcd7-7770-430a-a771-3f9345b015e7)
 
+make sure the image looks like the same on the RIGHT side, if you got the left one you didn't execute `abx2xml` properly
+
+8. delete the highlighted one
+
+   make sure there are no line breaks
+
+   (obviously LOOK at the right side)
+
+   and then Save...
+
+## if you prefer doing everything on phone
+lmao video is too big, uploading later!
 
 # some proof
 
