@@ -68,7 +68,54 @@ make sure the image looks like the same on the RIGHT side, if you got the left o
     everyone who is tech savvy please make an Issue because i change this with FX File Explorer, not sure about doing that on ADB shell
 
 ## if you prefer doing everything on phone
-lmao video is too big, uploading later!
+lmao video is too big, uploading still images later!
+
+you need:
+* FX File Explorer
+* Remote ADB Shell
+* an app that can enable wireless ADB so you can communicate with Remote ADB Shell (i use WADB)
+
+1. open `FX File Explorer`
+2. make sure `Root access is enabled`
+   * (top-left) hamburger menu
+   * `Settings`
+   * `Upgrade FX`
+   * swipe left until you see the `Developer/Root` tab
+   * click the `Enable` button, confirm the warning
+3. you should see the `System (Root)` now, confirm the warning
+4. go to `data` folder, and then `system`
+5. scroll until you see `device_policies.xml`, copy to internal storage
+   * long press the `.xml` file
+   * (top-right) the rectangle button is copy
+   * (top-left) home button
+   * `Main Storage`
+   * (top-right) click the `1 copied` thingy
+   * (bottom-right) `Paste`
+
+## WHY?
+same reason as the pc tutorial above...
+
+6. open `Remote ADB Shell`
+7. if you didn't change anything in `WADB`, the default settings should do, just press `Connect`
+8. confirm the confirmation
+9. do `abx2xml -i /sdcard/device_policies.xml`
+10. go back to `FX`, open that mentioned `.xml` file
+11. click the pencil button on the top-right to edit the file
+12. scroll until you see the `kgclient` thingy, delete the string from its <admin> to </admin>
+13. make sure there are no line breaks, and then Save
+    * three-dots menu
+    * Save
+14. go back to internal storage, move that file back to `/data/system/` (aka. previous folder)
+    * same tutorial as the `Step 5` but this time you press the scissors button aka. `Cut`
+15. confirm to `Overwrite / Merge`
+16. (IMPORTANT!) fix the permission
+    * long press the `.xml` file
+    * click the (i) button near the file you just long-pressed
+    * you should now see the 3x3 table, press it
+    * make sure the `owner` and `group` is `system`, if not then you can click it to change, `system` is top-right on my device
+    * make sure the `owner` has the `Read` and `Write` checked, everything else should not be set (`-`)
+    * confirm the confirmation
+17. done, reboot device before uninstalling with ADB
 
 # some proof
 
