@@ -105,17 +105,22 @@ same reason as the pc tutorial above...
 13. make sure there are no line breaks, and then Save
     * three-dots menu
     * Save
-14. go back to internal storage, move that file back to `/data/system/` (aka. previous folder)
+14. go back to `Remote ADB Shell`, now do `xml2abx -i /sdcard/device_policies.xml`
+15. go back to `FX`, move that file back to `/data/system/` (aka. previous folder)
     * same tutorial as the `Step 5` but this time you press the scissors button aka. `Cut`
-15. confirm to `Overwrite / Merge`
-16. (IMPORTANT!) fix the permission
+16. confirm to `Overwrite / Merge`
+17. (IMPORTANT!) check if it's ABX or not
+    * click the `.xml` file on `/data/system/`
+    * make sure it's garbled (lmao) and have the "ABX" header
+    * if it is then you can just close the file
+19. (IMPORTANT!) fix the permission
     * long press the `.xml` file
     * click the (i) button near the file you just long-pressed
     * you should now see the 3x3 table, press it
     * make sure the `owner` and `group` is `system`, if not then you can click it to change, `system` is top-right on my device
     * make sure the `owner` has the `Read` and `Write` checked, everything else should not be set (`-`)
     * confirm the confirmation
-17. done, reboot device before uninstalling with ADB
+20. done, reboot device before uninstalling with ADB
 
 # some proof
 
