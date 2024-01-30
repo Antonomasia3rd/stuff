@@ -78,7 +78,9 @@ lmao video is too big, uploading later!
 
 i have currently 6 users (with the ID of 0, 10, 11, 12, 95, and 150), and then executes that to check whether Device services (aka. `kgclient`) is installed or not
 
-the very below command (`pm list packages -u`...) means:
+the very below command (`pm list packages`...) means:
 
 * `-u` is to show uninstalled packages
 * `grep` is basically searching the string for the specified character (which in this case it's `kgclient`)
+
+  if the `package:`... thingy appears, it means that it's totally uninstalled before with `pm uninstall`..., aka. i have that package before, so i can proof myself
