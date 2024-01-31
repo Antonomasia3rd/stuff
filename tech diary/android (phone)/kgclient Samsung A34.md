@@ -78,7 +78,7 @@ make sure the image looks like the same on the RIGHT side, if you got the left o
     everyone who is tech savvy please make an Issue because i change this with FX File Explorer, not sure about doing that on ADB shell
 
 ## if you prefer doing everything on phone
-lmao video is too big, uploading still images later!
+here is the video tutorial: https://youtu.be/r_7Vo8U6YMY
 
 you need:
 * FX File Explorer
