@@ -675,4 +675,23 @@ package:com.android.phone
 package:com.google.android.packageinstaller
 package:com.samsung.android.app.smartcapture
 
-D:\platform-tools>
+D:\platform-tools>echo
+SuList list:
+#hex_
+#hex_ - Magisk Plugin
+3C CPU Manager
+Activity Launcher
+Bluetooth # for BLP module
+FX
+Galaxy MaxHz
+Greenify
+Kernel Adiutor
+Logcat Extreme
+MRepo
+Purr
+Settings
+Shizuku
+System UI
+SystemUI Tuner
+WA Tweaker
+Wireless adb
