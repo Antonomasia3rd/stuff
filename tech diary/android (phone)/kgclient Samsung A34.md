@@ -19,7 +19,9 @@ and also i have ALT way, which is changing the "`device_policies.xml`" in `/data
 
 the benefit is that you don't have to do much hassle by removing ALL accounts and users,
 
-but the side effect is it's not for everyone, it's not easy...
+# SIDE EFFECTS !!
+* it's not for everyone, it's not easy...
+* if you somehow enters safe mode you HAVE to restore the package because it still locks, so make sure your ADB is "always allow"ed
 
 you need to install 3 more apps on this method, VS the "Device Owner" replacement, which only requires 2 apps (e.g. Island + KnoxPatch)
 
