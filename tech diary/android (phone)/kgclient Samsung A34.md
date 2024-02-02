@@ -21,7 +21,7 @@ the benefit is that you don't have to do much hassle by removing ALL accounts an
 
 # SIDE EFFECTS !!
 * it's not for everyone, it's not easy...
-* if you somehow enters safe mode you HAVE to restore the package because it still locks, so make sure your ADB is "always allow"ed
+* if you somehow enters safe mode you HAVE to restore the package because it will add it back, so make sure your ADB is "always allow"ed
 
 you need to install 3 more apps on this method, VS the "Device Owner" replacement, which only requires 2 apps (e.g. Island + KnoxPatch)
 
