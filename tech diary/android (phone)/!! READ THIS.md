@@ -1,4 +1,4 @@
-# I have downgraded to One UI 5.1 (thank goodnees the BINARY version is still the same), so i won't be continuing this list
+# I have downgraded to One UI 5.1 (thank goodnees the BINARY version is still the same), so i won't be continuing this diary
 
 ## What benefits do I get from One UI 5.1?
 * Opening from widgets transition
