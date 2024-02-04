@@ -6,7 +6,8 @@ you know that once removing kgclient you're locked by System UI with this messag
 
 you know that you can replace the so-called "Device Owner" with 3rd party apps, such as Test DPC, Island / Insular, Dhizuku, etc. But unfortunately that does NOT work on unlocked bootloader
 * WHY "Device Owner"? `kgclient` uses that to trigger the warning and preventing uninstallation
-EDIT: reported that this only works on Test DPC and NOT Island
+
+# EDIT: i can't reproduce this on One UI 5.1 so i think this only works on One UI 6
 
 if you're ROOTED, you can bypass the bootloader detection with KnoxPatch, and then execute your dpm set-device-owner as usual
 * by "as usual" i mean- you also have to follow the Android's original rules, which is removing all accounts and users (incl. secure folder and dual messenger) before attempting that, etc.
