@@ -10,6 +10,12 @@ i discontinued that in favor of One UI 5.1
 
 i posted about what things that i back up + my debloat list on my phone!
 
+### but- you can still debloat on One UI 5.1 right?!
+
+debloating with the previous list won't do much for the RAM
+
+i made the One UI 6 version just to match the One UI 5's RAM usage on boot (which is ~3.2 GB)
+
 ## what the "college" folder doing?
 
 it's source code archive from the "basic programming" course 👀
