@@ -2,6 +2,7 @@
 
 ## What benefits do I get from One UI 5.1?
 * Opening from widgets transition
+  (one ui 6 also do this but only on first launch)
 * Screenshoting work profile and secure folder directly
   (on One UI 6 it saves to its own user instead of user 0 aka. personal profile)
 * better performance
@@ -14,3 +15,5 @@
   (not very noticeable since it's like ~30 mins?)
 * latest Android version
   (so i can enjoy multi-user on Firefds [UDC], the [Tiramisu] version is buggy and didn't get updated)
+* pause USB PD charging while gaming
+  (not very useful since i use the 85% limit thingy)
