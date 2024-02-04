@@ -4,11 +4,11 @@ this is my personal stuff, that i want to share on github~
 
 (i don't have any blogs alr (⁠๑⁠•⁠﹏⁠•⁠))
 
-## take a look on "tech diary"
+## don't take a look on "tech diary"
 
-(if you want ^^)
+i discontinued that in favor of One UI 5.1
 
-i post about what things that i back up + my debloat list on my phone!
+i posted about what things that i back up + my debloat list on my phone!
 
 ## what the "college" folder doing?
 
