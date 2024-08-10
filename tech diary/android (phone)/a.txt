@@ -122,6 +122,152 @@ package:com.android.externalstorage
 package:com.android.server.telecom
 package:com.google.android.packageinstaller
 
+D:\platform-tools>adb shell pm list packages --user 10 -s
+package:android.auto_generated_rro_product__
+package:com.google.android.providers.media.module
+package:android
+package:com.google.android.ext.services
+package:com.android.shell
+package:com.samsung.android.honeyboard
+package:com.samsung.android.providers.trash
+package:com.google.android.gms
+package:com.android.nfc
+package:com.google.android.overlay.modules.modulemetadata.forframework
+package:com.samsung.android.providers.media
+package:com.google.android.gsf
+package:com.android.settings
+package:com.android.systemui
+package:com.android.intentresolver
+package:com.google.android.webview
+package:com.google.android.modulemetadata
+package:com.google.android.overlay.gmsconfig.geotz
+package:com.google.android.permissioncontroller
+package:com.android.providers.settings
+package:com.samsung.android.secsoundpicker
+package:com.android.phone
+package:com.google.android.packageinstaller
+package:com.samsung.android.app.smartcapture
+
+D:\platform-tools>adb shell pm list packages --user 11 -s
+package:com.android.internal.systemui.navbar.threebutton
+package:com.android.settings.intelligence
+package:android
+package:com.android.shell
+package:com.samsung.android.honeyboard
+package:com.samsung.android.dialer
+package:com.android.nfc
+package:com.android.providers.telephony
+package:com.android.chrome
+package:com.android.settings
+package:com.android.systemui
+package:com.samsung.android.messaging
+package:com.samsung.android.incallui
+package:com.google.android.webview
+package:com.sec.android.app.launcher
+package:com.google.android.permissioncontroller
+package:com.android.server.telecom
+package:com.android.providers.settings
+package:com.android.phone
+package:com.samsung.android.providers.contacts
+package:com.google.android.packageinstaller
+package:com.samsung.android.mtp
+package:com.samsung.android.app.telephonyui
+
+D:\platform-tools>adb shell pm list packages --user 12 -s
+package:com.android.internal.systemui.navbar.threebutton
+package:com.android.settings.intelligence
+package:android
+package:com.android.shell
+package:com.samsung.android.honeyboard
+package:com.samsung.android.dialer
+package:com.android.nfc
+package:com.android.providers.telephony
+package:com.android.chrome
+package:com.android.settings
+package:com.android.systemui
+package:com.samsung.android.messaging
+package:com.samsung.android.incallui
+package:com.google.android.webview
+package:com.sec.android.app.launcher
+package:com.google.android.permissioncontroller
+package:com.android.server.telecom
+package:com.android.providers.settings
+package:com.android.phone
+package:com.samsung.android.providers.contacts
+package:com.google.android.packageinstaller
+package:com.samsung.android.mtp
+package:com.samsung.android.app.telephonyui
+
+D:\platform-tools>adb shell pm list packages --user 95 -s
+package:android.auto_generated_rro_product__
+package:com.google.android.overlay.modules.permissioncontroller.forframework
+package:android
+package:com.google.android.gms
+package:com.android.nfc
+package:com.android.providers.downloads
+package:com.google.android.overlay.modules.modulemetadata.forframework
+package:com.google.android.gsf
+package:com.android.chrome
+package:com.facebook.appmanager
+package:com.android.settings
+package:com.google.android.overlay.modules.permissioncontroller
+package:com.android.intentresolver
+package:com.google.android.webview
+package:com.google.android.overlay.gmsconfig.geotz
+package:com.google.android.permissioncontroller
+package:com.android.keychain
+package:com.android.server.telecom
+package:com.android.providers.settings
+package:com.sec.android.provider.badge
+package:com.android.phone
+package:com.google.android.packageinstaller
+
+D:\platform-tools>adb shell su -c pm list packages --user 150 -s
+package:com.google.android.providers.media.module
+package:android
+package:com.google.android.ext.services
+package:com.android.shell
+package:com.samsung.android.honeyboard
+package:com.samsung.android.providers.trash
+package:com.google.android.gms
+package:com.android.nfc
+package:com.samsung.android.providers.media
+package:com.google.android.gsf
+package:com.android.settings
+package:com.samsung.knox.securefolder
+package:com.android.systemui
+package:com.android.intentresolver
+package:com.google.android.webview
+package:com.google.android.modulemetadata
+package:com.google.android.permissioncontroller
+package:com.android.providers.settings
+package:com.sec.android.provider.badge
+package:com.samsung.android.secsoundpicker
+package:com.android.phone
+package:com.google.android.packageinstaller
+package:com.samsung.android.app.smartcapture
+
+D:\platform-tools>echo
+SuList list:
+#hex_
+#hex_ - Magisk Plugin
+3C CPU Manager
+Activity Launcher
+Bluetooth # for BLP module
+FX
+Galaxy MaxHz
+Greenify
+Kernel Adiutor
+Logcat Extreme
+MRepo
+Purr
+Settings
+Shizuku
+System UI
+SystemUI Tuner
+WA Tweaker
+Wireless adb
+
 D:\platform-tools>adb shell pm list packages --user 0 -u -s
 package:com.sec.android.RilServiceModeApp
 package:com.samsung.oda.service
@@ -549,149 +695,3 @@ package:com.sec.android.mimage.photoretouching
 package:com.google.android.youtube
 package:com.samsung.android.gru
 package:com.samsung.android.scpm
-
-D:\platform-tools>adb shell pm list packages --user 10 -s
-package:android.auto_generated_rro_product__
-package:com.google.android.providers.media.module
-package:android
-package:com.google.android.ext.services
-package:com.android.shell
-package:com.samsung.android.honeyboard
-package:com.samsung.android.providers.trash
-package:com.google.android.gms
-package:com.android.nfc
-package:com.google.android.overlay.modules.modulemetadata.forframework
-package:com.samsung.android.providers.media
-package:com.google.android.gsf
-package:com.android.settings
-package:com.android.systemui
-package:com.android.intentresolver
-package:com.google.android.webview
-package:com.google.android.modulemetadata
-package:com.google.android.overlay.gmsconfig.geotz
-package:com.google.android.permissioncontroller
-package:com.android.providers.settings
-package:com.samsung.android.secsoundpicker
-package:com.android.phone
-package:com.google.android.packageinstaller
-package:com.samsung.android.app.smartcapture
-
-D:\platform-tools>adb shell pm list packages --user 11 -s
-package:com.android.internal.systemui.navbar.threebutton
-package:com.android.settings.intelligence
-package:android
-package:com.android.shell
-package:com.samsung.android.honeyboard
-package:com.samsung.android.dialer
-package:com.android.nfc
-package:com.android.providers.telephony
-package:com.android.chrome
-package:com.android.settings
-package:com.android.systemui
-package:com.samsung.android.messaging
-package:com.samsung.android.incallui
-package:com.google.android.webview
-package:com.sec.android.app.launcher
-package:com.google.android.permissioncontroller
-package:com.android.server.telecom
-package:com.android.providers.settings
-package:com.android.phone
-package:com.samsung.android.providers.contacts
-package:com.google.android.packageinstaller
-package:com.samsung.android.mtp
-package:com.samsung.android.app.telephonyui
-
-D:\platform-tools>adb shell pm list packages --user 12 -s
-package:com.android.internal.systemui.navbar.threebutton
-package:com.android.settings.intelligence
-package:android
-package:com.android.shell
-package:com.samsung.android.honeyboard
-package:com.samsung.android.dialer
-package:com.android.nfc
-package:com.android.providers.telephony
-package:com.android.chrome
-package:com.android.settings
-package:com.android.systemui
-package:com.samsung.android.messaging
-package:com.samsung.android.incallui
-package:com.google.android.webview
-package:com.sec.android.app.launcher
-package:com.google.android.permissioncontroller
-package:com.android.server.telecom
-package:com.android.providers.settings
-package:com.android.phone
-package:com.samsung.android.providers.contacts
-package:com.google.android.packageinstaller
-package:com.samsung.android.mtp
-package:com.samsung.android.app.telephonyui
-
-D:\platform-tools>adb shell pm list packages --user 95 -s
-package:android.auto_generated_rro_product__
-package:com.google.android.overlay.modules.permissioncontroller.forframework
-package:android
-package:com.google.android.gms
-package:com.android.nfc
-package:com.android.providers.downloads
-package:com.google.android.overlay.modules.modulemetadata.forframework
-package:com.google.android.gsf
-package:com.android.chrome
-package:com.facebook.appmanager
-package:com.android.settings
-package:com.google.android.overlay.modules.permissioncontroller
-package:com.android.intentresolver
-package:com.google.android.webview
-package:com.google.android.overlay.gmsconfig.geotz
-package:com.google.android.permissioncontroller
-package:com.android.keychain
-package:com.android.server.telecom
-package:com.android.providers.settings
-package:com.sec.android.provider.badge
-package:com.android.phone
-package:com.google.android.packageinstaller
-
-D:\platform-tools>adb shell su -c pm list packages --user 150 -s
-package:com.google.android.providers.media.module
-package:android
-package:com.google.android.ext.services
-package:com.android.shell
-package:com.samsung.android.honeyboard
-package:com.samsung.android.providers.trash
-package:com.google.android.gms
-package:com.android.nfc
-package:com.samsung.android.providers.media
-package:com.google.android.gsf
-package:com.android.settings
-package:com.samsung.knox.securefolder
-package:com.android.systemui
-package:com.android.intentresolver
-package:com.google.android.webview
-package:com.google.android.modulemetadata
-package:com.google.android.permissioncontroller
-package:com.android.providers.settings
-package:com.sec.android.provider.badge
-package:com.samsung.android.secsoundpicker
-package:com.android.phone
-package:com.google.android.packageinstaller
-package:com.samsung.android.app.smartcapture
-
-D:\platform-tools>echo
-SuList list:
-#hex_
-#hex_ - Magisk Plugin
-3C CPU Manager
-Activity Launcher
-Bluetooth # for BLP module
-FX
-Galaxy MaxHz
-Greenify
-Kernel Adiutor
-Logcat Extreme
-MRepo
-Purr
-Settings
-Shizuku
-System UI
-SystemUI Tuner
-WA Tweaker
-Wireless adb
