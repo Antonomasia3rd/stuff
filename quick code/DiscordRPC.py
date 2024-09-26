@@ -5,7 +5,7 @@ from pypresence import Presence
 from win10toast import ToastNotifier
 
 # don't forget to install the dependencies! >.>
-# open https://discord.com/developers dulu, create new app, then copy the Application ID
+# open https://discord.com/developers, create new app, then copy the Application ID
 client_id = '1234567891011121314'
 RPC = Presence(client_id)
 toaster = ToastNotifier()
