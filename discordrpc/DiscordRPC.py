@@ -1,16 +1,17 @@
-import time
-import psutil
-import configparser
-from ctypes import windll, create_unicode_buffer
-from pypresence import Presence
-from win10toast import ToastNotifier
+import re # regex
+import time # i forgot, probably for the time thingy on button 1
+import psutil # most of the things (system stats, battery, etc.)
+import configparser # handles .ini file
+from ctypes import windll, create_unicode_buffer # get foreground window title
+from pypresence import Presence # you know this don't u .-.
+from win10toast import ToastNotifier # push notifs if errors / completes
 
-# i call this massive update since i don't know anything abt configparser XD
+# i call this massive update since i don't know anything abt configparser before XD
 config = configparser.ConfigParser()
 config.read('config.ini')
 
 # don't forget to install the dependencies! >.>
-# open https://discord.com/developers dulu, create new app, then copy the Application ID
+# open https://discord.com/developers first, create new app, then copy the Application ID
 client_id = config['general']['client_id']
 RPC = Presence(client_id)
 toaster = ToastNotifier()
@@ -19,13 +20,15 @@ toaster = ToastNotifier()
 # oe, change the config ini file, you are not looking for anything here >.>
 CENSOR_MAP = dict(config['censor_map'])
 
-# push notif on Windows 10 if succeed
+# push notif on Windows 10 if connected
 def connect_rpc():
     is_shown = False
+    restart_message = config['messages']['rpc_restarted_message']  # Customizable restarted message
+
     while True:
         try:
             RPC.connect()
-            toaster.show_toast("Discord", "Rich Presence has been restarted (report a bug if it loops)")
+            toaster.show_toast("Discord", restart_message)
             return True
         except Exception as e:
             if not is_shown:
@@ -40,14 +43,41 @@ def get_focused_window_title():
     hwnd = windll.user32.GetForegroundWindow()
     buffer = create_unicode_buffer(128)
     windll.user32.GetWindowTextW(hwnd, buffer, len(buffer))
-    window_title = buffer.value or "staring at the void >.> (Taskbar)"
-    for keyword, replacement in CENSOR_MAP.items():
-        if keyword.lower() in window_title.lower():
-            window_title = replacement
-    # discord doesn't accept 1 char title (though arRPC bypasses this!)
-    # often happens on the X app humph D:
+    idle_message = config['general'].get('idle_message', "staring at the void >.> (Taskbar)")
+    window_title = buffer.value or idle_message
+    
+    # if pattern replacement is applied on raw title, do that before anything else
+    if config['censor_map'].getboolean('apply_pattern_on_raw'):
+        pattern_replace_map = dict(item.split(" = ") for item in config['censor_map']['pattern_replace'].strip().splitlines() if item)
+        for pattern, replacement in pattern_replace_map.items():
+            window_title = re.sub(pattern, replacement, window_title)
+        return window_title
+    
+    # apply censoring rules based on defined order
+    rule_order = config['censor_map']['rule_order'].split(', ')
+    for rule in rule_order:
+        if rule == 'full_replace':
+            full_replace_map = dict(item.split(" = ") for item in config['censor_map']['full_replace'].strip().splitlines() if item)
+            for keyword, replacement in full_replace_map.items():
+                if keyword.lower() in window_title.lower():
+                    window_title = replacement
+                    break
+        
+        elif rule == 'word_replace':
+            word_replace_map = dict(item.split(" = ") for item in config['censor_map']['word_replace'].strip().splitlines() if item)
+            for keyword, replacement in word_replace_map.items():
+                window_title = window_title.replace(keyword, replacement)
+        
+        elif rule == 'pattern_replace':
+            pattern_replace_map = dict(item.split(" = ") for item in config['censor_map']['pattern_replace'].strip().splitlines() if item)
+            for pattern, replacement in pattern_replace_map.items():
+                window_title = re.sub(pattern, replacement, window_title)
+    
+    # handle single-char window titles, because discord is weird
+    # (although arRPC bypasses this!)
     if len(window_title) == 1:
         window_title += " "
+    
     return window_title
 
 # CPU + RAM usage
@@ -62,7 +92,7 @@ def get_time_and_battery():
     now = time.localtime()
     time_str = time.strftime("%I:%M %p", now)
     
-    # Check if battery exists
+    # check if battery exists (lmao, preventing crash on desktops)
     battery_info = psutil.sensors_battery()
     if battery_info is None:
         return f"{time_str}, 🖥️"
@@ -87,25 +117,41 @@ def get_large_image_and_text():
     now = time.localtime()
     hour = now.tm_hour
     
-    # time-based implementation - be creative! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-    if 5 <= hour < 12:
-        return config['time_based_images']['morning_image'], config['time_based_images']['morning_text']
-    elif 12 <= hour < 16:
-        return config['time_based_images']['afternoon_image'], config['time_based_images']['afternoon_text']
-    elif 16 <= hour < 22:
-        return config['time_based_images']['evening_image'], config['time_based_images']['evening_text']
+    # load time ranges from that ini file
+    morning_start = int(config['time_ranges']['morning_start'])
+    morning_end = int(config['time_ranges']['morning_end'])
+    afternoon_start = int(config['time_ranges']['afternoon_start'])
+    afternoon_end = int(config['time_ranges']['afternoon_end'])
+    evening_start = int(config['time_ranges']['evening_start'])
+    evening_end = int(config['time_ranges']['evening_end'])
+    night_start = int(config['time_ranges']['night_start'])
+    night_end = int(config['time_ranges']['night_end'])
+    
+    # morning
+    if morning_start <= hour < morning_end:
+        return config['large_image']['morning_image'], config['large_image']['morning_text']
+    
+    # afternoon
+    elif afternoon_start <= hour < afternoon_end:
+        return config['large_image']['afternoon_image'], config['large_image']['afternoon_text']
+    
+    # evening
+    elif evening_start <= hour < evening_end:
+        return config['large_image']['evening_image'], config['large_image']['evening_text']
+    
+    # night
     else:
-        return config['time_based_images']['night_image'], config['time_based_images']['night_text']
+        return config['large_image']['night_image'], config['large_image']['night_text']
 
 # small picture - i also made it react if AFK more than 2 minutes
 def get_small_image_and_text(idle_time):
-    # Check if the user is AFK for more than the configured idle threshold
-    idle_threshold = int(config['afk']['idle_threshold'])  # In seconds
-    afk_message = config['afk']['afk_message']  # Configurable AFK message
-    show_idle_time = config.getboolean('afk', 'show_idle_time')  # On/off switch for idle time
+    # check if the user is AFK for more than the configured idle threshold
+    idle_threshold = int(config['afk']['idle_threshold'])
+    afk_message = config['afk']['afk_message']
+    show_idle_time = config.getboolean('afk', 'show_idle_time')
 
     if idle_time >= idle_threshold or last_window_title == "Windows Default Lock Screen":
-        # Convert idle time into hours, minutes, seconds if enabled
+        # convert idle time into hours, minutes, seconds if enabled
         idle_str = ""
         if show_idle_time:
             hours_idle = int(idle_time // 3600)
@@ -113,13 +159,13 @@ def get_small_image_and_text(idle_time):
             seconds_idle = int(idle_time % 60)
             idle_str = f" since {hours_idle}h {minutes_idle}m {seconds_idle}s"
         
-        # Return AFK image and text with optional idle time
+        # return AFK small image and small text
         return 'zzz', f"{afk_message}{idle_str}"
 
     now = time.localtime()
     hour = now.tm_hour
     
-    # Return normal status based on the time of day
+    # return normal status based on the time of day
     if 5 <= hour < 12:
         return 'online', config['small_text']['morning_text']
     elif 12 <= hour < 16:
@@ -147,12 +193,12 @@ def update_presence():
         last_window_title = window_title
     
     cpu_percent, ram_percent, total_ram_gb = get_system_info()
-    time_and_battery = get_time_and_battery()  # Dynamic label for button 1
+    time_and_battery = get_time_and_battery()
     large_image, large_text = get_large_image_and_text()
     small_image, small_text = get_small_image_and_text(idle_time)
     system_uptime_start = get_system_uptime_start()
 
-    # Fetch layout configurations
+    # on/off switch - WARNING: this is unfinished
     show_large_image = config.getboolean('layout', 'show_large_image')
     show_small_image = config.getboolean('layout', 'show_small_image')
     show_buttons = config.getboolean('layout', 'show_buttons')
@@ -163,15 +209,15 @@ def update_presence():
     button_2_label = config['buttons']['button_2_label']
     button_2_url = config['buttons']['button_2_url']
 
-    # Set up dynamic presence components
+    # button logic - TODO: make button 1 label not-hardcoded
     buttons = []
     if show_buttons:
         buttons = [
-            {"label": time_and_battery, "url": config['buttons']['button_1_url']},  # Dynamic time and battery
+            {"label": time_and_battery, "url": config['buttons']['button_1_url']},
             {"label": button_2_label, "url": button_2_url}
         ]
     
-    # Assembling the presence data dynamically based on the layout
+    # other logic
     presence_data = {}
     
     if show_details:
@@ -193,7 +239,7 @@ def update_presence():
     if show_buttons:
         presence_data['buttons'] = buttons
     
-    # Updating Discord RPC
+    # push
     try:
         RPC.update(**presence_data)
     except Exception as e:
@@ -209,4 +255,5 @@ idle_start_time = time.time()
 # (if your laptop / PC can't handle it, it will probably lag the entire system, yk windows xD)
 while True:
     update_presence()
-    time.sleep(5)
+    update_interval = int(config['general'].get('update_interval', 5))  # Default to 5 seconds if not set
+    time.sleep(update_interval)
